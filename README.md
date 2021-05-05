@@ -2,15 +2,6 @@
 
 This repository contains the data and metadata to build packages for [Wordsiv](https://github.com/tallpauley/wordsiv) text generation library.
 
-## How Packages are Built
-The CI pipeline takes the data and metadata from each directory in `data-packages/` and builds Python packages which are published as [Github Releases](https://docs.github.com/en/github/administering-a-repository/about-releases).
-
-These packages are then available for install via the Wordsiv CLI:
-
-```bash
-$ python -m wordsiv install en-markov-0.1.0
-```
-
 ## Contributing
 
 ### Use Git LFS For Data Files

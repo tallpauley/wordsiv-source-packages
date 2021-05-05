@@ -1,0 +1,11 @@
+{
+    "name": "trigrams",
+    "lang": "en",
+    "version": "0.1.0",
+    "source_class": "CountSource",
+    "description": "Counts for all 3-letter lowercase trigrams from Google Web Trillion Word Corpus",
+    "wordsiv_version": ">=0.1.0",
+    "author": "Chris Pauley",
+    "email": "cmpauley@gmail.com",
+    "url": "https://chrispauleydesign.com"
+}

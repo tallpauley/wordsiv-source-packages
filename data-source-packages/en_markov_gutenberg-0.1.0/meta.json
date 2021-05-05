@@ -1,0 +1,11 @@
+{
+    "name": "markov_gutenberg",
+    "lang": "en",
+    "version": "0.1.0",
+    "source_class": "MarkovModel",
+    "description": "A markov model compiled from NLTK's included Project Gutenberg Books",
+    "wordsiv_version": ">=0.1.0",
+    "author": "Chris Pauley",
+    "email": "cmpauley@gmail.com",
+    "url": "https://chrispauleydesign.com"
+}
