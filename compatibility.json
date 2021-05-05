@@ -1,0 +1,9 @@
+{
+    "wordsiv": {
+        "0.1.0": {
+            "en_markov_gutenberg": "0.1.0",
+            "en_common_google": "0.1.0",
+            "en_trigrams": "0.1.0"
+        }
+    }
+}
