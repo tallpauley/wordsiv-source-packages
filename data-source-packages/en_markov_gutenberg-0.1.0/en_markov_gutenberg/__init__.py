@@ -1,5 +1,5 @@
 import pkgutil
-from wordsiv.models.markov_model import Model, MarkovSource
+from wordsiv.models.markov_model import MarkovSource
 from pathlib import Path
 
 # Assuming installed as directory (zip_safe=False)
