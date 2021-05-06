@@ -7,7 +7,7 @@ from shutil import copy
 from setuptools import setup
 
 def load_meta(fp):
-    with io.open(fp, encoding='utf8') as f:
+    with open(fp, encoding='utf8') as f:
         return json.load(f)
 
 
@@ -34,7 +34,7 @@ def setup_package():
     meta_path = path.join(root, 'meta.json')
     meta = load_meta(meta_path)
     data_source_name = str(meta['lang'] + '_' + meta['name'])
-    data_source_dir = path.join(data_source_name, data_source_name + '-' + meta['version'])
+    data_source_dir = data_source_name
 
     copy(meta_path, path.join(data_source_name))
     copy(meta_path, data_source_dir)

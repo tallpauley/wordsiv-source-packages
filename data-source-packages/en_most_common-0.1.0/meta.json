@@ -3,9 +3,10 @@
     "lang": "en",
     "version": "0.1.0",
     "source_class": "CountSource",
-    "description": "Top 1/3rd million words from Google's Trillion Word Corpus, filtered",
+    "description": "Top 1/3rd million words from Google's Web Trillion Word Corpus, filtered",
     "wordsiv_version": ">=0.1.0",
     "author": "Chris Pauley",
     "email": "cmpauley@gmail.com",
-    "url": "https://chrispauleydesign.com"
+    "url": "https://chrispauleydesign.com",
+    "license": "See Google Web Trillion Word Corpus"
 }
