@@ -51,6 +51,11 @@ def setup_package():
         package_data={package_name: list_files(data_source_dir)},
         install_requires=list_requirements(meta),
         zip_safe=False,
+        entry_points= {
+            'wordsiv_source_modules': [
+                '{p} = {p}'.format(p=package_name)
+            ]
+        }
     )
 
 if __name__ == '__main__':
