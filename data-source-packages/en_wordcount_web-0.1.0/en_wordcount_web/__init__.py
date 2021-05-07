@@ -8,7 +8,8 @@ HERE = Path(__file__).parent.absolute()
 # Sources should always be prefixed with the package name
 # as they will be merged into a common namespace
 sources = {
-    'en_wordcount_web': WordCountSource(HERE / 'data' / 'data.lfs.txt', 100000), # 100k default
+    'en_wordcount_web': WordCountSource(HERE / 'data' / 'data.lfs.txt', 50000), # 50k default
+    'en_wordcount_web_medium': WordCountSource(HERE / 'data' / 'data.lfs.txt', 50000), # 50k
     'en_wordcount_web_small': WordCountSource(HERE / 'data' / 'data.lfs.txt', 10000), # 10k
     'en_wordcount_web_large': WordCountSource(HERE / 'data' / 'data.lfs.txt') # 1/3rd million(ish)
 }
