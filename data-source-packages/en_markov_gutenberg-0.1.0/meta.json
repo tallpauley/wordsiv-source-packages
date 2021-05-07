@@ -1,8 +1,9 @@
 {
-    "name": "markov_gutenberg",
+    "name": "en_markov_gutenberg",
     "lang": "en",
     "version": "0.1.0",
-    "source_class": "MarkovModel",
+    "source_class": "MarkovSource",
+    "compatible_models": ["MarkovModel"],
     "description": "A markov model compiled from NLTK's included Project Gutenberg Books",
     "wordsiv_version": ">=0.1.0",
     "author": "Chris Pauley",

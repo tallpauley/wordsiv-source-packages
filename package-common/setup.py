@@ -33,22 +33,22 @@ def setup_package():
     root = path.abspath(path.dirname(__file__))
     meta_path = path.join(root, 'meta.json')
     meta = load_meta(meta_path)
-    data_source_name = str(meta['lang'] + '_' + meta['name'])
-    data_source_dir = data_source_name
+    package_name = meta['name']
+    data_source_dir = path.join(package_name, 'data')
 
-    copy(meta_path, path.join(data_source_name))
+    copy(meta_path, path.join(package_name))
     copy(meta_path, data_source_dir)
 
     setup(
-        name=data_source_name,
+        name=package_name,
         description=meta['description'],
         author=meta['author'],
         author_email=meta['email'],
         url=meta['url'],
         version=meta['version'],
         license=meta['license'],
-        packages=[data_source_name],
-        package_data={data_source_name: list_files(data_source_dir)},
+        packages=[package_name],
+        package_data={package_name: list_files(data_source_dir)},
         install_requires=list_requirements(meta),
         zip_safe=False,
     )

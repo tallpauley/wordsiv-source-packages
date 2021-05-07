@@ -1,8 +1,9 @@
 {
-    "name": "most_common",
+    "name": "en_wordcount_web",
     "lang": "en",
     "version": "0.1.0",
-    "source_class": "CountSource",
+    "source_class": "WordCountSource",
+    "compatible_models": ["ProbabilityModel", "TopModel", "RandomModel"],
     "description": "Top 1/3rd million words from Google's Web Trillion Word Corpus, filtered",
     "wordsiv_version": ">=0.1.0",
     "author": "Chris Pauley",
