@@ -7,6 +7,7 @@ from wordsiv.models.wordcount import (
     ProbabilityModel,
 )
 from pathlib import Path
+import json
 
 # Assuming installed as directory (zip_safe=False)
 HERE = Path(__file__).parent.absolute()

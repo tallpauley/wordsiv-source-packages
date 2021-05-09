@@ -1,6 +1,7 @@
 import pkgutil
 from wordsiv.models.markov import MarkovSource, MarkovModel
 from pathlib import Path
+import json
 
 # Assuming installed as directory (zip_safe=False)
 HERE = Path(__file__).parent.absolute()
