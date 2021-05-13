@@ -1,5 +1,5 @@
 import pkgutil
-from wordsiv.models.markov import MarkovSource, MarkovModel
+from wordsiv.text_models.markov import MarkovSource, MarkovModel
 from pathlib import Path
 import json
 

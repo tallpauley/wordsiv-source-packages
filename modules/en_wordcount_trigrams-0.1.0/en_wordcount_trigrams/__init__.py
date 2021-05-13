@@ -1,6 +1,6 @@
 import pkgutil
 import json
-from wordsiv.models.wordcount import (
+from wordsiv.text_models.wordcount import (
     WordCountSource,
     TopModel,
     RandomModel,
