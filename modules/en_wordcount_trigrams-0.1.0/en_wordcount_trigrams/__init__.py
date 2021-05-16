@@ -17,22 +17,9 @@ with open(HERE / "meta.json", "r") as f:
 
 # Sources should always be prefixed with the package name
 # as they will be merged into a common namespace
-sources = {"en_wordcount_trigrams": WordCountSource(HERE / "data" / "data.lfs.txt")}
-
-# dictionary of "pipelines": preset maps of sources to models
-# Pipelines should also be prefixed with the package name
-pipelines = {
-    # basically an alias for en_wordcount_trigrams_top
+sources = {
     "en_wordcount_trigrams": {
-        "source": sources["en_wordcount_trigrams"],
-        "model_class": SequentialModel,
-    },
-    "en_wordcount_trigrams_seq": {
-        "source": sources["en_wordcount_trigrams"],
-        "model_class": SequentialModel,
-    },
-    "en_wordcount_trigrams_random": {
-        "source": sources["en_wordcount_trigrams"],
-        "model_class": RandomModel,
+        "source": WordCountSource(HERE / "data" / "data.lfs.txt"),
+        "default_model_class": SequentialModel,
     },
 }

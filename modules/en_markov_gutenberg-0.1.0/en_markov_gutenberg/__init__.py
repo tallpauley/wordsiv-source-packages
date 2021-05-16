@@ -12,13 +12,9 @@ with open(HERE / "meta.json", "r") as f:
 
 # Sources should always be prefixed with the package name
 # as they will be merged into a common namespace
-sources = {"en_markov_gutenberg": MarkovSource(HERE / "data" / "data.lfs.json")}
-
-# dictionary of "pipelines": preset maps of sources to models
-# Pipelines should also be prefixed with the package name
-pipelines = {
+sources = {
     "en_markov_gutenberg": {
-        "source": sources["en_markov_gutenberg"],
-        "model_class": MarkovModel,
-    }
+        "source": MarkovSource(HERE / "data" / "data.lfs.json"),
+        "default_model_class": MarkovModel,
+    },
 }
