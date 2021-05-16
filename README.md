@@ -1,6 +1,6 @@
 # Wordsiv Source Packages
 
-This repository serves Python packages of [Sources](https://github.com/tallpauley/wordsiv/blob/main/wordsiv/models/source.py) for [Wordsiv](https://github.com/tallpauley/wordsiv), a text-generation library.
+This repository serves Python packages of [Sources](https://github.com/tallpauley/wordsiv/blob/main/wordsiv/source.py) for [Wordsiv](https://github.com/tallpauley/wordsiv), a text-generation library.
 
 ## Installing a Source Package
 Source packages are Python packages, so you can simply install them with Pip.
@@ -27,7 +27,7 @@ en_wordcount_trigrams-0.1.0/
 These modules are packaged using the Wordsiv CLI, and then uploaded as individual Github Releases.
 
 ```bash
-$ wordsiv package modules/en_wordcount_trigrams-0.1.0 dist/
+$ wordsiv package build modules/en_wordcount_trigrams-0.1.0 dist/
 $ ls dist/
 en_wordcount_trigrams-0.1.0-py3-none-any.whl
 en_wordcount_trigrams-0.1.0.tar.gz
@@ -35,27 +35,19 @@ en_wordcount_trigrams-0.1.0.tar.gz
 
 ## Source Package Structure
 
-Each package contains one module, which exports the dictionaries `sources` and `pipelines`. Sources are instantiated [Source](https://github.com/tallpauley/wordsiv/blob/main/wordsiv/models/source.py) objects:
+Each package contains one module, which exports dicts `sources` and `meta`.
+
+`sources` has the following structure, where `source` is a [Source](https://github.com/tallpauley/wordsiv/blob/main/wordsiv/source.py) object, and `default_model_class` is the default model to use with this source.
 
 ```python
 
 sources = {
-    "en_wordcount_trigrams": WordCountSource(HERE / "data" / "data.lfs.txt"),
-    ...
-}
-
-```
-
-Pipelines are simply suggested pairings of Source objects and [Model](https://github.com/tallpauley/wordsiv/blob/main/wordsiv/models/markov.py#L45) Classes:
-```python
-
-pipelines = {
-    "en_wordcount_trigrams": {
-        "source": sources["en_wordcount_trigrams"],
-        "model_class": RandomModel,
+    "en_markov_gutenberg": {
+        "source": MarkovSource(HERE / "data" / "data.lfs.json"),
+        "default_model_class": MarkovModel,
     },
-    ...
 }
+
 ```
 
 ## Contributing
