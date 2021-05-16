@@ -1,10 +1,9 @@
 import pkgutil
 import json
-from wordsiv.text_models.wordcount import (
+from wordsiv.sentence_models_sources import (
     WordCountSource,
-    TopModel,
+    SequentialModel,
     RandomModel,
-    ProbabilityModel,
 )
 from pathlib import Path
 import json
@@ -26,18 +25,14 @@ pipelines = {
     # basically an alias for en_wordcount_trigrams_top
     "en_wordcount_trigrams": {
         "source": sources["en_wordcount_trigrams"],
-        "model_class": TopModel,
+        "model_class": SequentialModel,
     },
-    "en_wordcount_trigrams_top": {
+    "en_wordcount_trigrams_seq": {
         "source": sources["en_wordcount_trigrams"],
-        "model_class": TopModel,
+        "model_class": SequentialModel,
     },
     "en_wordcount_trigrams_random": {
         "source": sources["en_wordcount_trigrams"],
         "model_class": RandomModel,
-    },
-    "en_wordcount_trigrams_prob": {
-        "source": sources["en_wordcount_trigrams"],
-        "model_class": ProbabilityModel,
     },
 }

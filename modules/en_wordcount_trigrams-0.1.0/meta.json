@@ -3,7 +3,7 @@
     "lang": "en",
     "version": "0.1.0",
     "source_class": "WordCountSource",
-    "compatible_models": ["ProbabilityModel", "TopModel", "RandomModel"],
+    "compatible_models": ["RandomModel", "SequentialModel"],
     "description": "Counts for all 3-letter lowercase trigrams from Google Web Trillion Word Corpus",
     "wordsiv_version": ">=0.1.0",
     "author": "Chris Pauley",

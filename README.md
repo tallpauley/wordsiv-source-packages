@@ -52,7 +52,7 @@ Pipelines are simply suggested pairings of Source objects and [Model](https://gi
 pipelines = {
     "en_wordcount_trigrams": {
         "source": sources["en_wordcount_trigrams"],
-        "model_class": TopModel,
+        "model_class": RandomModel,
     },
     ...
 }
