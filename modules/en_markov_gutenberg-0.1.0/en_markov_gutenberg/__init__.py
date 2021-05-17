@@ -14,7 +14,7 @@ with open(HERE / "meta.json", "r") as f:
 # as they will be merged into a common namespace
 sources = {
     "en_markov_gutenberg": {
-        "source": MarkovSource(HERE / "data" / "data.lfs.json"),
+        "source": MarkovSource(HERE / "data" / "data.lfs.json", meta),
         "default_model_class": MarkovModel,
     },
 }

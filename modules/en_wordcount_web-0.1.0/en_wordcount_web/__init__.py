@@ -18,15 +18,15 @@ with open(HERE / "meta.json", "r") as f:
 # as they will be merged into a common namespace
 sources = {
     "en_wordcount_web": {
-        "source": WordCountSource(HERE / "data" / "data.lfs.txt", 50000),
+        "source": WordCountSource(HERE / "data" / "data.lfs.txt", meta, 50000),
         "default_model_class": RandomModel,
     },
     "en_wordcount_web_sm": {
-        "source": WordCountSource(HERE / "data" / "data.lfs.txt", 10000),
+        "source": WordCountSource(HERE / "data" / "data.lfs.txt", meta, 10000),
         "default_model_class": RandomModel,
     },
     "en_wordcount_web_lg": {
-        "source": WordCountSource(HERE / "data" / "data.lfs.txt"),
+        "source": WordCountSource(HERE / "data" / "data.lfs.txt", meta),
         "default_model_class": RandomModel,
     },
 }

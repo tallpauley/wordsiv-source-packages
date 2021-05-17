@@ -5,7 +5,7 @@ This repository serves Python packages of [Sources](https://github.com/tallpaule
 ## Installing a Source Package
 Source packages are Python packages, so you can simply install them with Pip.
 
-Assuming you have already [installed Wordsiv](https://github.com/tallpauley/wordsiv#quick-start), you can install a Source package like this:
+Assuming you have already [installed Wordsiv](https://github.com/tallpauley/wordsiv#installation), you can install a Source package like this:
 
 ```bash
 $ pip install https://github.com/tallpauley/wordsiv-source-packages/releases/download/en_wordcount_web-0.1.0/en_wordcount_web-0.1.0-py3-none-any.whl

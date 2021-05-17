@@ -19,7 +19,7 @@ with open(HERE / "meta.json", "r") as f:
 # as they will be merged into a common namespace
 sources = {
     "en_wordcount_trigrams": {
-        "source": WordCountSource(HERE / "data" / "data.lfs.txt"),
+        "source": WordCountSource(HERE / "data" / "data.lfs.txt", meta),
         "default_model_class": SequentialModel,
     },
 }
