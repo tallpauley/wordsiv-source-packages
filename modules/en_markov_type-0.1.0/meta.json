@@ -1,0 +1,13 @@
+{
+    "name": "en_markov_type",
+    "lang": "en",
+    "version": "0.1.0",
+    "source_class": "MarkovSource",
+    "compatible_models": ["MarkovModel"],
+    "description": "A markov model compiled from public domain books on yypography & printing",
+    "wordsiv_version": ">=0.1.0",
+    "author": "Chris Pauley",
+    "email": "cmpauley@gmail.com",
+    "url": "https://github.com/tallpauley",
+    "license": "Public Domain"
+}
