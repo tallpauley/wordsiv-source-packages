@@ -1,0 +1,11 @@
+{
+    "name": "wsv_chr",
+    "lang": "chr",
+    "version": "0.1.0",
+    "description": "A collection of Sources in the Cherokee syllabary derived from cherokeedictionary.net",
+    "wordsiv_version": ">=0.1.0",
+    "author": "Chris Pauley",
+    "email": "cmpauley@gmail.com",
+    "url": "https://github.com/tallpauley",
+    "license": "See cherokeedictionary.net"
+}
