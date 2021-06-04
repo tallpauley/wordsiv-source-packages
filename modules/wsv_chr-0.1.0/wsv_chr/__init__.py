@@ -13,16 +13,16 @@ with open(HERE / "meta.json", "r") as f:
 # Sources should always be prefixed with the package name
 # as they will be merged into a common namespace
 sources = {
-    "chr_mkv": {
+    "chr_markov": {
         "source": MarkovSource(HERE / "data" / "markov.lfs.json", meta),
         "default_model_class": MarkovModel,
     },
     "chr_words": {
-        "source": WordCountSource(HERE / "data" / "word-list.lfs.json", meta),
+        "source": WordCountSource(HERE / "data" / "word-list.lfs.txt", meta),
         "default_model_class": RandomModel,
     },
     "chr_trigrams": {
-        "source": WordCountSource(HERE / "data" / "trigrams.lfs.json", meta),
+        "source": WordCountSource(HERE / "data" / "trigrams.lfs.txt", meta),
         "default_model_class": SequentialModel,
     },
 }
