@@ -1,10 +1,12 @@
 {
     "wordsiv": {
         "0.1.0": {
+            "ar_wordcount_subs": "0.1.1",
             "en_markov_gutenberg": "0.1.0",
             "en_wordcount_web": "0.1.0",
             "en_wordcount_trigrams": "0.1.0",
-            "ar_wordcount_subs": "0.1.0"
+            "es_wordcount_subs": "0.1.1",
+            "fa_wordcount_subs": "0.1.1"
         }
     }
 }
