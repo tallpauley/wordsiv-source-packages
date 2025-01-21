@@ -1,4 +1,6 @@
-# Wordsiv Source Packages
+# Deprecated: Wordsiv Source Packages
+
+**This repo has been deprecated, as WordSiv 0.2.0+ no longer uses source packages.**
 
 This repository serves Python packages of [Sources](https://github.com/tallpauley/wordsiv/blob/main/wordsiv/source.py) for [Wordsiv](https://github.com/tallpauley/wordsiv), a text-generation library.
 
